@@ -21,8 +21,8 @@ const puppeteer = require('puppeteer');
     // Faz o tweet
     let tweetPhrase = "AAAA";
     await page.type('div[class="notranslate public-DraftEditor-content"]', tweetPhrase, { delay: 30 });
-    await page.click('div[data-testid="tweetButtonInline"] ');
+    await page.click('div[data-testid="tweetButtonInline"]');
 
-  
-    //await browser.close();
+    // Fecha o browser
+    await browser.close();
 })();
